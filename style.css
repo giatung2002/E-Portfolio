@@ -1,0 +1,181 @@
+body {
+    background-color: #1C1C1C;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #F3F3F3;
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(82, 55, 55);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav a {
+    color: #1C1C1C;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #1C1C1C;
+    color: #F3F3F3;
+  }
+  
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    text-align: left;
+  }
+  
+  section h2 {
+    font-size: 20px;
+    text-align: left;
+    color: Gray;
+    font-weight: bold;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    color: black ;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    background-image: url('https://cdn.discordapp.com/attachments/753514124763332632/1080281213866086510/lilwuyn_minimalistic_website_for_computer_science_ui_ux_uiux_we_4017307e-29b6-4ebb-b41e-d5dff9eee6d2.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Style the modal */
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Position the modal */
+    z-index: 1; /* Make sure the modal appears on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+  }
+  
+  /* Style the modal content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Use 80% of the screen width */
+  }
+  
+  /* Style the close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Style the contact form */
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the success message */
+  .success-message {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    padding: 10px;
+    margin-top: 20px;
+    display: none; /* Hide the message by default */
+  }
+  
+  .success-message.show {
+    display: block; /* Show the message when triggered */
+  }
+  
