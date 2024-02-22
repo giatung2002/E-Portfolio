@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 
   // Set up email parameters
-  $to = "canudometoo@gmail.com"; // Make sure to replace this with your actual email address
+  $to = "canudometoo@gmail.com";
   $subject = "New message from $name";
   $headers = "From: $email\r\n";
   $headers .= "Reply-To: $email\r\n";
