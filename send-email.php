@@ -9,8 +9,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     die("Please fill in all required fields.");
   }
 
+  // Sanitize input
+  $name = filter_var($name, FILTER_SANITIZE_STRING);
+  $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+  $message = filter_var($message, FILTER_SANITIZE_STRING);
+
+  // Validate email
+  if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    die("Invalid email format.");
+  }
+
   // Set up email parameters
-  $to = "youremail@example.com"; // Replace with your email address
+  $to = "canudometoo@gmail.com"; // Make sure to replace this with your actual email address
   $subject = "New message from $name";
   $headers = "From: $email\r\n";
   $headers .= "Reply-To: $email\r\n";

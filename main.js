@@ -38,3 +38,25 @@ contactLink.addEventListener("click", function() {
       contactModal.style.display = "none";
     }
   });
+  
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent the default form submission
+  
+    const form = e.target;
+    const data = new FormData(form); // Gather form data
+  
+    // Asynchronously submit the form data via POST
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(response => response.text())
+    .then(result => {
+      // Hide the form and show the success message
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('successMessage').style.display = 'block';
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  });
