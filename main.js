@@ -60,3 +60,12 @@ contactLink.addEventListener("click", function() {
       console.error('Error:', error);
     });
   });
+
+  window.addEventListener('scroll', function() {
+    const parallaxSection = document.getElementById('parallax-section');
+    let offset = window.pageYOffset;
+    parallaxSection.style.backgroundPositionY = offset * 0.7 + 'px';
+  });
+  
+  
+  

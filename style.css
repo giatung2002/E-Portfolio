@@ -81,22 +81,24 @@ body {
     justify-content: center;
     align-items: center;
     height: calc(100vh - 100px);
-    background-image: url('https://cdn.discordapp.com/attachments/753514124763332632/1080281213866086510/lilwuyn_minimalistic_website_for_computer_science_ui_ux_uiux_we_4017307e-29b6-4ebb-b41e-d5dff9eee6d2.jpeg');
-    background-size: cover;
+    background-image: url('https://cdn.discordapp.com/attachments/753514124763332632/1238399368760000523/5794866.jpg?ex=663f24c9&is=663dd349&hm=785374debbcd8eca9e8eccf6a301266d82b90ab083a455562b8b462fa485f072&');
     background-position: center;
-  }
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
   
   /* Style the modal */
 .modal {
-    display: none; /* Hide the modal by default */
-    position: fixed; /* Position the modal */
-    z-index: 1; /* Make sure the modal appears on top */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
   }
   
   /* Style the modal content */
@@ -172,10 +174,18 @@ body {
     border: 1px solid #d6e9c6;
     padding: 10px;
     margin-top: 20px;
-    display: none; /* Hide the message by default */
+    display: none; 
   }
   
   .success-message.show {
-    display: block; /* Show the message when triggered */
+    display: block; 
   }
   
+  #backgroundCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
